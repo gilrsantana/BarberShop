@@ -397,3 +397,52 @@ hr {
         flex-basis: 100%;
     }
 }
+
+/*--- Footer --*/
+#meetus {
+   padding-top: 100px;
+   padding-bottom: 20px; 
+   background: #efefef;
+}
+
+.meetus-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.meetus-row h1 {
+    margin-bottom: 20px;
+
+}
+
+.meetus-row p {
+    line-height: 40px;
+}
+
+.meetus-row .far,
+.meetus-row .fas {
+    font-size: 1.2em;
+}
+
+.meetus-left {
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.meetus-right {
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+@media screen and (max-width: 770px) {
+    .meetus-left, .meetus-right {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
