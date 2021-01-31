@@ -403,6 +403,7 @@ hr {
    padding-top: 100px;
    padding-bottom: 20px; 
    background: #efefef;
+   position: relative;
 }
 
 .meetus-row{
@@ -425,6 +426,8 @@ hr {
 .meetus-row .far,
 .meetus-row .fas {
     font-size: 1.2em;
+    color:#009688;
+    margin: 10px;
 }
 
 .meetus-left {
@@ -440,9 +443,62 @@ hr {
     text-align: right;
 }
 
+.meetus-img {
+    max-width: 370px;
+    position: absolute;
+    opacity: 0.1;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.social-links {
+   text-align: center;
+   margin: auto;
+}
+
+.social-links .fa {
+    margin: 40px 5px 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #009688;
+    border-radius: 3px;
+    line-height: 40px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #009688;
+}
+
+.social-links .fa:hover {
+    background: #009688;
+    color: #fff;
+    border: none;
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+
+.social-links p {
+    font-size: 0.8em;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 770px) {
     .meetus-left, .meetus-right {
         flex-basis: 100%;
         text-align: center;
+    }
+
+    .social-links {
+        width: 80%;
+    }
+
+    .meetus-img {
+        max-width: 250px;
+        top: 15%;
+    }
+
+    .meetus-row {
+        font-size: 0.8em;
     }
 }
